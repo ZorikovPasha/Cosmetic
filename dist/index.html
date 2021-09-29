@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Fira+Sans:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Montserrat:wght@500;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/libs.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+  <div class="wrapper">
+    
+  <header class="header">
+    <div class="container">
+      <div class="header__inner">
+        <div class="menu-btn">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+        <a class="logo" href="#">PerfectShop</a>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="#">Парфюмерия</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Макияж</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Уход за телом</a>
+            </li>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Уход за волосами</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="user">
+          <a class="user__link" href="#">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19.243 11.2826C19.243 8.93479 17.3476 7 14.9999 7C12.6522 7 10.7568 8.91305 10.7568 11.2826C10.7568 13.6522 12.6522 15.5652 14.9999 15.5652C17.3476 15.5652 19.243 13.6522 19.243 11.2826ZM11.8338 11.2826C11.8338 9.52175 13.2553 8.08696 14.9999 8.08696C16.7445 8.08696 18.1661 9.52175 18.1661 11.2826C18.1661 13.0435 16.7445 14.4783 14.9999 14.4783C13.2553 14.4783 11.8338 13.0435 11.8338 11.2826Z" fill="black"/>
+              <path d="M8 23.4565C8 23.7609 8.23692 24 8.53846 24C8.84 24 9.07692 23.7609 9.07692 23.4565C9.07692 19.8043 11.6185 17.0434 15 17.0434C18.3815 17.0434 20.9231 19.8043 20.9231 23.4565C20.9231 23.7609 21.16 24 21.4615 24C21.7631 24 22 23.7609 22 23.4565C22 19.2608 18.92 15.9565 15 15.9565C11.08 15.9565 8 19.2391 8 23.4565Z" fill="black"/>
+              </svg>
+              
+            <span class="user__num"></span>
+          </a>
+          <a class="user__link" href="#">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M18.825 7C17.3625 7 16.0125 7.60323 15 8.7C13.9875 7.60323 12.6375 7 11.175 7C8.30625 7 6 9.30323 6 12.1C6 16.871 14.2688 23.6161 14.6625 23.8903C14.775 24 14.8875 24 15 24C15.1125 24 15.2812 23.9452 15.3375 23.8903C15.7312 23.6161 24 16.871 24 12.1C24 9.30323 21.6937 7 18.825 7ZM15 22.7387C13.425 21.3677 7.125 15.829 7.125 12.1C7.125 9.90645 8.925 8.09677 11.175 8.09677C12.4688 8.09677 13.7625 8.75484 14.55 9.90645C14.775 10.1806 15.2812 10.1806 15.5062 9.90645C16.2937 8.80968 17.5312 8.09677 18.8812 8.09677C21.1312 8.09677 22.9312 9.90645 22.9312 12.1C22.875 15.829 16.575 21.3677 15 22.7387Z" fill="black"/>
+              </svg>
+              
+            <span class="user__num user__num--favorite">0</span>
+            
+          </a>
+          <a class="user__link" href="#">
+            <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21.7501 11.625H18.2894C17.9554 8.32471 16.6535 6 15 6C13.3455 6 12.0447 8.32471 11.7106 11.625H8.24999L6 24.0001H24L21.7501 11.625ZM15 7.12505C15.8832 7.12505 16.8446 8.96964 17.1457 11.625H12.8544C13.1554 8.96961 14.1168 7.12505 15 7.12505ZM9.18829 12.75H20.8106L22.6521 22.8751H7.34804L9.18829 12.75Z" fill="black"/>
+              <path d="M12.1866 13.5938C11.7206 13.5938 11.3428 13.9717 11.3428 14.4376C11.3428 14.9034 11.7206 15.2813 12.1866 15.2813C12.6523 15.2813 13.0303 14.9034 13.0303 14.4376C13.0303 13.9717 12.6523 13.5938 12.1866 13.5938Z" fill="black"/>
+              <path d="M17.8114 13.5938C17.3455 13.5938 16.9675 13.9717 16.9675 14.4376C16.9675 14.9034 17.3455 15.2813 17.8114 15.2813C18.2771 15.2813 18.6549 14.9034 18.6549 14.4376C18.6549 13.9717 18.2771 13.5938 17.8114 13.5938Z" fill="black"/>
+              </svg>
+              
+            <span class="user__num user__num--cart">0</span>
+          </a>
+        </div>
+        <a href="tel:" class="header__phone">+7 (499) 550-00-50</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="top">
+      <div class="container">
+        <div class="top__inner">
+          <aside class="aside">
+            <div class="aside__box">
+              <a class="aside__link" href="#"></a>
+              <form class="aside__form" action="">
+                <button class="aside__form-btn" type="submit"></button>
+                <input class="aside__form-input" type="text">
+              </form>
+            </div>
+          </aside>
+          <div class="top__body" style="background-image: url('images/top-bg.jpg');">
+            <div class="top__text">
+              <p class="top__label">
+                <h1 class="top__title"></h1>
+                <p class="top__par"></p>
+                <p class="top__btn btn"></p>
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      
+    </div>
+  </footer>
+  
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
