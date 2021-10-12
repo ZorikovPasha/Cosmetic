@@ -22,12 +22,22 @@ body {
   font-size: 14px;
   line-height: 20px;
   color: #000;
+
+  &.lock {
+    overflow-y: hidden;
+  }
 }
 
 .container {
-  max-width: 1470px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.section-body {
+  padding-left: 35px;
+  margin-left: -35px;
+  margin-right: -135px;
 }
 
 button {

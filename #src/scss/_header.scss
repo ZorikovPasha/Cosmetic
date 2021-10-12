@@ -1,11 +1,18 @@
 .header {
 
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  background: rgba(#FFFFFF, .16);
+
   // .header__inner
 
   &__inner {
     display: flex;
     align-items: center;
-    padding-right: 137px;
   }
 
   // .header__phone
@@ -15,14 +22,49 @@
     line-height: 22px;
   }
 }
+
+
+
 .menu-btn {
+
+  position: absolute;
+  top: 50%;
+  left: 1px;
   display: none;
+  width: 60px;
+  height: 50px;
+  transform: translate(0%, -50%);
+  background-color: $accent;
+
+  & div {
+    width: 40px;
+    height: 3px;
+    background-color: #fff;
+    transition: all .5s;
+  }
+  div + div {
+    margin-top: 5px;
+  }
 }
+
+  .menu-btn.active {
+    div:nth-child(2) {
+      opacity: 0;
+    }
+    div:nth-child(1) {
+      transform: translateY(5px) rotate(135deg);
+    }
+    div:nth-child(3) {
+      transform: translateY(-9px) rotate(-135deg);
+    }
+}  
+
 .logo {
   font-weight: 300;
   font-size: 22px;
   line-height: 26px;
   margin-right: 34px;
+  color: $accent;
 }
 
 .menu {
@@ -59,22 +101,25 @@
   // .menu__link
 
   &__link {
+  }
+}
+.user {
+
+  display: flex;
+  align-items: center;
+  margin-right: 32px;
+
+  // .user__link
+
+  &__link {
+    display: flex;
+    align-items: center;
 
     &:hover {
       path {
         fill: $accent;
       }
     }
-  }
-}
-.user {
-
-
-  margin-right: 32px;
-
-  // .user__link
-
-  &__link {
   }
 
   &__link + &__link {
