@@ -47,9 +47,7 @@
             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M19.243 11.2826C19.243 8.93479 17.3476 7 14.9999 7C12.6522 7 10.7568 8.91305 10.7568 11.2826C10.7568 13.6522 12.6522 15.5652 14.9999 15.5652C17.3476 15.5652 19.243 13.6522 19.243 11.2826ZM11.8338 11.2826C11.8338 9.52175 13.2553 8.08696 14.9999 8.08696C16.7445 8.08696 18.1661 9.52175 18.1661 11.2826C18.1661 13.0435 16.7445 14.4783 14.9999 14.4783C13.2553 14.4783 11.8338 13.0435 11.8338 11.2826Z" fill="black"/>
               <path d="M8 23.4565C8 23.7609 8.23692 24 8.53846 24C8.84 24 9.07692 23.7609 9.07692 23.4565C9.07692 19.8043 11.6185 17.0434 15 17.0434C18.3815 17.0434 20.9231 19.8043 20.9231 23.4565C20.9231 23.7609 21.16 24 21.4615 24C21.7631 24 22 23.7609 22 23.4565C22 19.2608 18.92 15.9565 15 15.9565C11.08 15.9565 8 19.2391 8 23.4565Z" fill="black"/>
-              </svg>
-              
-            <span class="user__num"></span>
+            </svg>
           </a>
           <a class="user__link" href="#">
             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -57,7 +55,6 @@
               </svg>
               
             <span class="user__num user__num--favorite">0</span>
-            
           </a>
           <a class="user__link" href="#">
             <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -69,46 +66,677 @@
             <span class="user__num user__num--cart">0</span>
           </a>
         </div>
-        <a href="tel:" class="header__phone">+7 (499) 550-00-50</a>
+        <a href="tel:74995500050" class="header__phone">+7 (499) 550-00-50</a>
       </div>
     </div>
   </header>
+  <div class="mob-menu">
+    <div class="mob-menu__body">
+      <button class="mob-menu__close"></button>
+    </div>
+  </div>
 
   <main class="main">
     <section class="top">
-      <div class="container">
+      <div class="top__container">
         <div class="top__inner">
-          <aside class="aside">
+          <aside class="aside animate__animated animate__fadeInUp wow" data-wow-delay="1.7s">
             <div class="aside__box">
-              <a class="aside__link" href="#"></a>
+              <a class="aside__link" href="#">
+                <p class="aside__link-text">каталог</p>
+              </a>
               <form class="aside__form" action="">
-                <button class="aside__form-btn" type="submit"></button>
-                <input class="aside__form-input" type="text">
+                <button class="aside__form-btn" type="submit">
+                  <img src="images/icons/search.svg" alt="search">
+                </button>
+                <div class="input-wrapper">
+                  <input class="aside__form-input" type="text">
+                </div>
               </form>
             </div>
           </aside>
-          <div class="top__body" style="background-image: url('images/top-bg.jpg');">
+          <div class="top__body" style="background-image: url(images/top-bg.jpg);">
             <div class="top__text">
-              <p class="top__label">
-                <h1 class="top__title"></h1>
-                <p class="top__par"></p>
-                <p class="top__btn btn"></p>
-              </p>
+              <p class="top__label animate__animated animate__fadeInLeft wow" data-wow-delay="0.5s">ИНТЕРНЕТ-магазин косметики</p>
+              <h1 class="top__title animate__animated animate__fadeInLeft wow" data-wow-delay="0.5s">
+                Новая реальность — 
+                бьюти-инжинириг XXI века
+              </h1>
+              <p class="top__par animate__animated animate__fadeInLeft wow" data-wow-delay="1.1s">Поднимите уход за кожей на новый уровень! Специально разработанные формулы и запатентованные технологии стирают следы активной мимики и борются с гравитацией.</p>
+              <a class="top__btn btn animate__animated animate__fadeInLeft wow" data-wow-delay="1.2s" href="#">Подробнее</a>
             </div>
           </div>
         </div>
 
       </div>
     </section>
+
+    <div class="catalog">
+      <div class="catalog__body">
+        <div class="catalog__top">
+          <p class="catalog__title">Каталог</p>
+          <button class="catalog__close"></button>
+        </div>
+        <ul class="catalog__list">
+          <li class="catalog__list-item">
+            <a class="catalog__list-link" href="#">Уходовая косметика</a>
+          </li>
+          <li class="catalog__list-item">
+            <a class="catalog__list-link" href="#">макияж</a>
+          </li>
+          <li class="catalog__list-item">
+            <a class="catalog__list-link" href="#">Парфюмерия</a>
+          </li>
+          <li class="catalog__list-item">
+            <a class="catalog__list-link" href="#">мужчинам</a>
+          </li>
+          <li class="catalog__list-item">
+            <a class="catalog__list-link" href="#">техника для красоты</a>
+          </li>
+          <li class="catalog__list-item">
+            <a class="catalog__list-link" href="#">Уход за телом</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="categories">
+      <div class="categories__container">
+        <div class="categories__items">
+          <a class="categories__item" style="background-image: url('images/categories/1.jpg');" href="#">
+            <div class="categories__text">
+              <p class="categories__num">01</p>
+              <p class="categories__name">Уходовая косметика</p>
+            </div>
+          </a>
+          <a class="categories__item" style="background-image: url('images/categories/2.jpg');" href="#">
+            <div class="categories__text">
+              <p class="categories__num">02</p>
+              <p class="categories__name">макияж</p>
+            </div>
+          </a>
+          <a class="categories__item" style="background-image: url('images/categories/3.jpg');" href="#">
+            <div class="categories__text">
+              <p class="categories__num">03</p>
+              <p class="categories__name">Парфюмерия</p>
+            </div>
+          </a>
+          <a class="categories__item" style="background-image: url('images/categories/4.jpg');" href="#">
+            <div class="categories__text">
+              <p class="categories__num">04</p>
+              <p class="categories__name">мужчинам</p>
+            </div>
+          </a>
+          <a class="categories__item" style="background-image: url('images/categories/5.jpg');" href="#">
+            <div class="categories__text">
+              <p class="categories__num">05</p>
+              <p class="categories__name">техника для красоты</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="popular">
+      <div class="container">
+        <h2 class="popular__title">Популярные товары</h2>
+        <div class="popular__line">
+          <p class="popular__text">Поднимите уход за кожей на новый уровень! Специально разработанные формулы
+            и запатентованные технологии стирают следы активной мимики и борются с гравитацией.</p>
+        </div>
+        <div class="popular__items">
+            <div class="popular__item item">
+              <div class="item__box">
+                <div class="item__box-new"></div>
+                <div class="item__box-sale"></div>
+                <div class="item__box-present"></div>
+                <button class="item__like">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.1043 1.77949C13.7441 1.41913 13.3164 1.13327 12.8457 0.938239C12.375 0.743206 11.8705 0.642822 11.361 0.642822C10.8515 0.642822 10.347 0.743206 9.87634 0.938239C9.40564 1.13327 8.97799 1.41913 8.6178 1.77949L7.87028 2.527L7.12277 1.77949C6.39522 1.05193 5.40844 0.643199 4.37953 0.643199C3.35061 0.643199 2.36384 1.05193 1.63629 1.77949C0.908735 2.50704 0.5 3.49381 0.5 4.52273C0.5 5.55164 0.908735 6.53842 1.63629 7.26597L2.3838 8.01348L7.87028 13.5L13.3568 8.01348L14.1043 7.26597C14.4646 6.90578 14.7505 6.47813 14.9455 6.00743C15.1406 5.53674 15.2409 5.03223 15.2409 4.52273C15.2409 4.01323 15.1406 3.50872 14.9455 3.03802C14.7505 2.56733 14.4646 2.13967 14.1043 1.77949V1.77949Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <img src="images/popular/1.png" alt="popular item">
+                <a class="item__name" href="#">Sisley Le Phyto Rouge</a>
+                  <a class="item__label" href="#">Sisley</a>
+                  <div class="item__price">
+                    <p class="item__price-old">
+                      3840 <span>руб.</span>
+                    </p>
+                    <p class="item__price-new">
+                      1750 <span>руб.</span>
+                    </p>
+                  </div>
+                  <div class="item__btn-wrapper">
+                    <button class="item__btn btn">В корзину</button>
+                  </div>
+              </div>
+            </div>
+            <div class="popular__item item">
+              <div class="item__box">
+                <div class="item__box-new"></div>
+                <div class="item__box-sale"></div>
+                <div class="item__box-present"></div>
+
+                <button class="item__like">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.1043 1.77949C13.7441 1.41913 13.3164 1.13327 12.8457 0.938239C12.375 0.743206 11.8705 0.642822 11.361 0.642822C10.8515 0.642822 10.347 0.743206 9.87634 0.938239C9.40564 1.13327 8.97799 1.41913 8.6178 1.77949L7.87028 2.527L7.12277 1.77949C6.39522 1.05193 5.40844 0.643199 4.37953 0.643199C3.35061 0.643199 2.36384 1.05193 1.63629 1.77949C0.908735 2.50704 0.5 3.49381 0.5 4.52273C0.5 5.55164 0.908735 6.53842 1.63629 7.26597L2.3838 8.01348L7.87028 13.5L13.3568 8.01348L14.1043 7.26597C14.4646 6.90578 14.7505 6.47813 14.9455 6.00743C15.1406 5.53674 15.2409 5.03223 15.2409 4.52273C15.2409 4.01323 15.1406 3.50872 14.9455 3.03802C14.7505 2.56733 14.4646 2.13967 14.1043 1.77949V1.77949Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <img src="images/popular/2.png" alt="popular item">
+                <a class="item__name" href="#">Dr.Jart Dermaclear Micro Foam</a>
+                  <a class="item__label" href="#">Dr.Jart</a>
+                  <div class="item__price">
+                    <p class="item__price-old">
+                      2110 <span>руб.</span>
+                    </p>
+                    <p class="item__price-new">
+                      1890 <span>руб.</span>
+                    </p>
+                  </div>
+                  <div class="item__btn-wrapper">
+                    <button class="item__btn btn">В корзину</button>
+                  </div>
+              </div>
+            </div>
+            <div class="popular__item item">
+              <div class="item__box">
+                <div class="item__box-sale"></div>
+                <div class="item__box-present"></div>
+
+                <button class="item__like">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.1043 1.77949C13.7441 1.41913 13.3164 1.13327 12.8457 0.938239C12.375 0.743206 11.8705 0.642822 11.361 0.642822C10.8515 0.642822 10.347 0.743206 9.87634 0.938239C9.40564 1.13327 8.97799 1.41913 8.6178 1.77949L7.87028 2.527L7.12277 1.77949C6.39522 1.05193 5.40844 0.643199 4.37953 0.643199C3.35061 0.643199 2.36384 1.05193 1.63629 1.77949C0.908735 2.50704 0.5 3.49381 0.5 4.52273C0.5 5.55164 0.908735 6.53842 1.63629 7.26597L2.3838 8.01348L7.87028 13.5L13.3568 8.01348L14.1043 7.26597C14.4646 6.90578 14.7505 6.47813 14.9455 6.00743C15.1406 5.53674 15.2409 5.03223 15.2409 4.52273C15.2409 4.01323 15.1406 3.50872 14.9455 3.03802C14.7505 2.56733 14.4646 2.13967 14.1043 1.77949V1.77949Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <img src="images/popular/3.png" alt="popular item">
+                <a class="item__name" href="#">Kerastase Elixir Ultime L'Huile Originale</a>
+                  <a class="item__label" href="#">Kerastase</a>
+                  <div class="item__price">
+                    <p class="item__price-old">
+                      2560 <span>руб.</span>
+                    </p>
+                    <p class="item__price-new">
+                      1350 <span>руб.</span>
+                    </p>
+                  </div>
+                  <div class="item__btn-wrapper">
+                    <button class="item__btn btn">В корзину</button>
+                  </div>
+              </div>
+            </div>
+            <div class="popular__item item">
+              <div class="item__box">
+                <button class="item__like">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.1043 1.77949C13.7441 1.41913 13.3164 1.13327 12.8457 0.938239C12.375 0.743206 11.8705 0.642822 11.361 0.642822C10.8515 0.642822 10.347 0.743206 9.87634 0.938239C9.40564 1.13327 8.97799 1.41913 8.6178 1.77949L7.87028 2.527L7.12277 1.77949C6.39522 1.05193 5.40844 0.643199 4.37953 0.643199C3.35061 0.643199 2.36384 1.05193 1.63629 1.77949C0.908735 2.50704 0.5 3.49381 0.5 4.52273C0.5 5.55164 0.908735 6.53842 1.63629 7.26597L2.3838 8.01348L7.87028 13.5L13.3568 8.01348L14.1043 7.26597C14.4646 6.90578 14.7505 6.47813 14.9455 6.00743C15.1406 5.53674 15.2409 5.03223 15.2409 4.52273C15.2409 4.01323 15.1406 3.50872 14.9455 3.03802C14.7505 2.56733 14.4646 2.13967 14.1043 1.77949V1.77949Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <img src="images/popular/4.png" alt="popular item">
+                <a class="item__name" href="#">Guerlain Mad Eyes Contrast Shadow Duo</a>
+                  <a class="item__label" href="#">Guerlain</a>
+                  <div class="item__price">
+                    <p class="item__price-old">
+                      2700 <span>руб.</span>
+                    </p>
+                    <p class="item__price-new">
+                      1620 <span>руб.</span>
+                    </p>
+                  </div>
+                  <div class="item__btn-wrapper">
+                    <button class="item__btn btn">В корзину</button>
+                  </div>
+              </div>
+            </div>
+            <div class="popular__item item">
+              <div class="item__box">
+                <div class="item__box-new"></div>
+                <div class="item__box-sale"></div>
+
+                <button class="item__like pressed">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.1043 1.77949C13.7441 1.41913 13.3164 1.13327 12.8457 0.938239C12.375 0.743206 11.8705 0.642822 11.361 0.642822C10.8515 0.642822 10.347 0.743206 9.87634 0.938239C9.40564 1.13327 8.97799 1.41913 8.6178 1.77949L7.87028 2.527L7.12277 1.77949C6.39522 1.05193 5.40844 0.643199 4.37953 0.643199C3.35061 0.643199 2.36384 1.05193 1.63629 1.77949C0.908735 2.50704 0.5 3.49381 0.5 4.52273C0.5 5.55164 0.908735 6.53842 1.63629 7.26597L2.3838 8.01348L7.87028 13.5L13.3568 8.01348L14.1043 7.26597C14.4646 6.90578 14.7505 6.47813 14.9455 6.00743C15.1406 5.53674 15.2409 5.03223 15.2409 4.52273C15.2409 4.01323 15.1406 3.50872 14.9455 3.03802C14.7505 2.56733 14.4646 2.13967 14.1043 1.77949V1.77949Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <img src="images/popular/5.png" alt="popular item">
+                <a class="item__name" href="#">Dior 5 Couleurs Couture</a>
+                  <a class="item__label" href="#">DIOR</a>
+                  <div class="item__price">
+                    <p class="item__price-from">
+                      от <span>2100</span> руб.
+                    </p>
+                  </div>
+                  <div class="item__btn-wrapper">
+                    <button class="item__btn btn">В корзину</button>
+                  </div>
+              </div>
+            </div>
+            <div class="popular__item item">
+              <div class="item__box">
+                <div class="item__box-sale"></div>
+
+                <button class="item__like">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.1043 1.77949C13.7441 1.41913 13.3164 1.13327 12.8457 0.938239C12.375 0.743206 11.8705 0.642822 11.361 0.642822C10.8515 0.642822 10.347 0.743206 9.87634 0.938239C9.40564 1.13327 8.97799 1.41913 8.6178 1.77949L7.87028 2.527L7.12277 1.77949C6.39522 1.05193 5.40844 0.643199 4.37953 0.643199C3.35061 0.643199 2.36384 1.05193 1.63629 1.77949C0.908735 2.50704 0.5 3.49381 0.5 4.52273C0.5 5.55164 0.908735 6.53842 1.63629 7.26597L2.3838 8.01348L7.87028 13.5L13.3568 8.01348L14.1043 7.26597C14.4646 6.90578 14.7505 6.47813 14.9455 6.00743C15.1406 5.53674 15.2409 5.03223 15.2409 4.52273C15.2409 4.01323 15.1406 3.50872 14.9455 3.03802C14.7505 2.56733 14.4646 2.13967 14.1043 1.77949V1.77949Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <img src="images/popular/6.png" alt="popular item">
+                <a class="item__name" href="#">Jo Malone Wood Sage And Sea Salt Cologne</a>
+                  <a class="item__label" href="#">Jo Malone</a>
+                  <div class="item__price">
+                    <p class="item__price-from">
+                      от <span>2100</span> руб.
+                    </p>
+                  </div>
+                  <div class="item__btn-wrapper">
+                    <button class="item__btn btn">В корзину</button>
+                  </div>
+              </div>
+            </div>
+            <div class="popular__item item">
+              <div class="item__box">
+                <button class="item__like">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.1043 1.77949C13.7441 1.41913 13.3164 1.13327 12.8457 0.938239C12.375 0.743206 11.8705 0.642822 11.361 0.642822C10.8515 0.642822 10.347 0.743206 9.87634 0.938239C9.40564 1.13327 8.97799 1.41913 8.6178 1.77949L7.87028 2.527L7.12277 1.77949C6.39522 1.05193 5.40844 0.643199 4.37953 0.643199C3.35061 0.643199 2.36384 1.05193 1.63629 1.77949C0.908735 2.50704 0.5 3.49381 0.5 4.52273C0.5 5.55164 0.908735 6.53842 1.63629 7.26597L2.3838 8.01348L7.87028 13.5L13.3568 8.01348L14.1043 7.26597C14.4646 6.90578 14.7505 6.47813 14.9455 6.00743C15.1406 5.53674 15.2409 5.03223 15.2409 4.52273C15.2409 4.01323 15.1406 3.50872 14.9455 3.03802C14.7505 2.56733 14.4646 2.13967 14.1043 1.77949V1.77949Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <img src="images/popular/1.png" alt="popular item">
+                <a class="item__name" href="#">Sisley Le Phyto Rouge</a>
+                  <a class="item__label" href="#">Sisley</a>
+                  <div class="item__price">
+                    <p class="item__price-old">
+                      3840 <span>руб.</span>
+                    </p>
+                    <p class="item__price-new">
+                      1750 <span>руб.</span>
+                    </p>
+                  </div>
+                  <div class="item__btn-wrapper">
+                    <button class="item__btn btn">В корзину</button>
+                  </div>
+              </div>
+            </div>
+            <div class="popular__item item">
+              <div class="item__box">
+                <button class="item__like">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.1043 1.77949C13.7441 1.41913 13.3164 1.13327 12.8457 0.938239C12.375 0.743206 11.8705 0.642822 11.361 0.642822C10.8515 0.642822 10.347 0.743206 9.87634 0.938239C9.40564 1.13327 8.97799 1.41913 8.6178 1.77949L7.87028 2.527L7.12277 1.77949C6.39522 1.05193 5.40844 0.643199 4.37953 0.643199C3.35061 0.643199 2.36384 1.05193 1.63629 1.77949C0.908735 2.50704 0.5 3.49381 0.5 4.52273C0.5 5.55164 0.908735 6.53842 1.63629 7.26597L2.3838 8.01348L7.87028 13.5L13.3568 8.01348L14.1043 7.26597C14.4646 6.90578 14.7505 6.47813 14.9455 6.00743C15.1406 5.53674 15.2409 5.03223 15.2409 4.52273C15.2409 4.01323 15.1406 3.50872 14.9455 3.03802C14.7505 2.56733 14.4646 2.13967 14.1043 1.77949V1.77949Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <img src="images/popular/2.png" alt="popular item">
+                <a class="item__name" href="#">Dr.Jart Dermaclear Micro Foam</a>
+                  <a class="item__label" href="#">Dr.Jart</a>
+                  <div class="item__price">
+                    <p class="item__price-old">
+                      2110 <span>руб.</span>
+                    </p>
+                    <p class="item__price-new">
+                      1890 <span>руб.</span>
+                    </p>
+                  </div>
+                  <div class="item__btn-wrapper">
+                    <button class="item__btn btn">В корзину</button>
+                  </div>
+              </div>
+            </div>
+            <div class="popular__item item">
+              <div class="item__box">
+                <button class="item__like">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.1043 1.77949C13.7441 1.41913 13.3164 1.13327 12.8457 0.938239C12.375 0.743206 11.8705 0.642822 11.361 0.642822C10.8515 0.642822 10.347 0.743206 9.87634 0.938239C9.40564 1.13327 8.97799 1.41913 8.6178 1.77949L7.87028 2.527L7.12277 1.77949C6.39522 1.05193 5.40844 0.643199 4.37953 0.643199C3.35061 0.643199 2.36384 1.05193 1.63629 1.77949C0.908735 2.50704 0.5 3.49381 0.5 4.52273C0.5 5.55164 0.908735 6.53842 1.63629 7.26597L2.3838 8.01348L7.87028 13.5L13.3568 8.01348L14.1043 7.26597C14.4646 6.90578 14.7505 6.47813 14.9455 6.00743C15.1406 5.53674 15.2409 5.03223 15.2409 4.52273C15.2409 4.01323 15.1406 3.50872 14.9455 3.03802C14.7505 2.56733 14.4646 2.13967 14.1043 1.77949V1.77949Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <img src="images/popular/3.png" alt="popular item">
+                <a class="item__name" href="#">Kerastase Elixir Ultime</a>
+                  <a class="item__label" href="#">Kerastase</a>
+                  <div class="item__price">
+                    <p class="item__price-old">
+                      2560 <span>руб.</span>
+                    </p>
+                    <p class="item__price-new">
+                      1350 <span>руб.</span>
+                    </p>
+                  </div>
+                  <div class="item__btn-wrapper">
+                    <button class="item__btn btn">В корзину</button>
+                  </div>
+              </div>
+            </div>
+            <div class="popular__item item">
+              <div class="item__box">
+                <button class="item__like">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.1043 1.77949C13.7441 1.41913 13.3164 1.13327 12.8457 0.938239C12.375 0.743206 11.8705 0.642822 11.361 0.642822C10.8515 0.642822 10.347 0.743206 9.87634 0.938239C9.40564 1.13327 8.97799 1.41913 8.6178 1.77949L7.87028 2.527L7.12277 1.77949C6.39522 1.05193 5.40844 0.643199 4.37953 0.643199C3.35061 0.643199 2.36384 1.05193 1.63629 1.77949C0.908735 2.50704 0.5 3.49381 0.5 4.52273C0.5 5.55164 0.908735 6.53842 1.63629 7.26597L2.3838 8.01348L7.87028 13.5L13.3568 8.01348L14.1043 7.26597C14.4646 6.90578 14.7505 6.47813 14.9455 6.00743C15.1406 5.53674 15.2409 5.03223 15.2409 4.52273C15.2409 4.01323 15.1406 3.50872 14.9455 3.03802C14.7505 2.56733 14.4646 2.13967 14.1043 1.77949V1.77949Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <img src="images/popular/4.png" alt="popular item">
+                <a class="item__name" href="#">Guerlain Mad</a>
+                  <a class="item__label" href="#">Guerlain</a>
+                  <div class="item__price">
+                    <p class="item__price-old">
+                      2700 <span>руб.</span>
+                    </p>
+                    <p class="item__price-new">
+                      1620 <span>руб.</span>
+                    </p>
+                  </div>
+                  <div class="item__btn-wrapper">
+                    <button class="item__btn btn">В корзину</button>
+                  </div>
+              </div>
+            </div>
+            <div class="popular__item item">
+              <div class="item__box">
+                <button class="item__like pressed">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.1043 1.77949C13.7441 1.41913 13.3164 1.13327 12.8457 0.938239C12.375 0.743206 11.8705 0.642822 11.361 0.642822C10.8515 0.642822 10.347 0.743206 9.87634 0.938239C9.40564 1.13327 8.97799 1.41913 8.6178 1.77949L7.87028 2.527L7.12277 1.77949C6.39522 1.05193 5.40844 0.643199 4.37953 0.643199C3.35061 0.643199 2.36384 1.05193 1.63629 1.77949C0.908735 2.50704 0.5 3.49381 0.5 4.52273C0.5 5.55164 0.908735 6.53842 1.63629 7.26597L2.3838 8.01348L7.87028 13.5L13.3568 8.01348L14.1043 7.26597C14.4646 6.90578 14.7505 6.47813 14.9455 6.00743C15.1406 5.53674 15.2409 5.03223 15.2409 4.52273C15.2409 4.01323 15.1406 3.50872 14.9455 3.03802C14.7505 2.56733 14.4646 2.13967 14.1043 1.77949V1.77949Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <img src="images/popular/5.png" alt="popular item">
+                <a class="item__name" href="#">Dior 5 Couleurs Couture</a>
+                  <a class="item__label" href="#">DIOR</a>
+                  <div class="item__price">
+                    <p class="item__price-from">
+                      от <span>2100</span> руб.
+                    </p>
+                  </div>
+                  <div class="item__btn-wrapper">
+                    <button class="item__btn btn">В корзину</button>
+                  </div>
+              </div>
+            </div>
+            <div class="popular__item item">
+              <div class="item__box">
+                <button class="item__like">
+                  <svg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.1043 1.77949C13.7441 1.41913 13.3164 1.13327 12.8457 0.938239C12.375 0.743206 11.8705 0.642822 11.361 0.642822C10.8515 0.642822 10.347 0.743206 9.87634 0.938239C9.40564 1.13327 8.97799 1.41913 8.6178 1.77949L7.87028 2.527L7.12277 1.77949C6.39522 1.05193 5.40844 0.643199 4.37953 0.643199C3.35061 0.643199 2.36384 1.05193 1.63629 1.77949C0.908735 2.50704 0.5 3.49381 0.5 4.52273C0.5 5.55164 0.908735 6.53842 1.63629 7.26597L2.3838 8.01348L7.87028 13.5L13.3568 8.01348L14.1043 7.26597C14.4646 6.90578 14.7505 6.47813 14.9455 6.00743C15.1406 5.53674 15.2409 5.03223 15.2409 4.52273C15.2409 4.01323 15.1406 3.50872 14.9455 3.03802C14.7505 2.56733 14.4646 2.13967 14.1043 1.77949V1.77949Z" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </button>
+                <img src="images/popular/6.png" alt="popular item">
+                <a class="item__name" href="#">Jo Malone Wood Sage And Sea Salt Cologne</a>
+                  <a class="item__label" href="#">Jo Malone</a>
+                  <div class="item__price">
+                    <p class="item__price-from">
+                      от <span>2100</span> руб.
+                    </p>
+                  </div>
+                  <div class="item__btn-wrapper">
+                    <button class="item__btn btn">В корзину</button>
+                  </div>
+              </div>
+            </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <div class="banner">
+      <div class="container">
+          <div class="banner__body section-body" style="background-image: url('images/banner-bg.jpg');">
+            <h2 class="banner__title animate__animated animate__fadeInLeft wow" data-wow-delay="0.3s">Финальная распродажа осени</h2>
+            <a class="banner__btn btn animate__animated animate__fadeInLeft wow" data-wow-delay="0.7s" href="#">Узнать подробнее</a>  
+        </div>  
+      </div>
+    </div>
+
+    <section class="brands">
+      <div class="container">
+        <h2 class="brands__title">Популярные бренды</h2>
+          <div class="brands__items">
+            <div class="brands__item">
+              <img src="images/brands/1.png" alt="brand">
+            </div>
+            <div class="brands__item">
+              <img src="images/brands/2.png" alt="brand">
+            </div>
+            <div class="brands__item">
+              <img src="images/brands/3.png" alt="brand">
+            </div>
+            <div class="brands__item">
+              <img src="images/brands/4.png" alt="brand">
+            </div>
+            <div class="brands__item">
+              <img src="images/brands/5.png" alt="brand">
+            </div>
+            <div class="brands__item">
+              <img src="images/brands/1.png" alt="brand">
+            </div>
+            <div class="brands__item">
+              <img src="images/brands/2.png" alt="brand">
+            </div>
+            <div class="brands__item">
+              <img src="images/brands/3.png" alt="brand">
+            </div>
+            <div class="brands__item">
+              <img src="images/brands/4.png" alt="brand">
+            </div>
+            <div class="brands__item">
+              <img src="images/brands/5.png" alt="brand">
+            </div>
+          </div>
+          <div class="brands__link-wrapper">
+            <a class="brands__link" href="#">Все бренды</a>
+          </div>
+      </div>
+    </section>
+
+    <section class="projects">
+      <div class="container">
+          <h2 class="projects__title">Проекты</h2>
+          <p class="projects__text">Поднимите уход за кожей на новый уровень! Специально разработанные формулы
+            и запатентованные технологии стирают следы активной мимики и борются с гравитацией.</p>
+          <div class="projects__items">
+            <div class="projects__item animate__animated animate__fadeInUp wow" data-wow-delay="0.8s">
+              <div class="projects__item-box">
+                <img src="images/projects/1.jpg" alt="project">
+                <a class="projects__item-name" href="#">Lancome La Vie Est Belle Eau de Parfum</a>
+                <p class="projects__item-text">Омолаживающая сверхувлажняющая маска для лица</p>
+              </div>
+            </div>
+            <div class="projects__item animate__animated animate__fadeInUp wow" data-wow-delay="0.9s">
+              <div class="projects__item-box">
+                <img src="images/projects/2.png" alt="project">
+                <a class="projects__item-name" href="#">Guerlain Aqua Allegoria Discovery 
+                  Set</a>
+                <p class="projects__item-text">Парфюмерный набор</p>
+              </div>
+            </div>
+            <div class="projects__item animate__animated animate__fadeInUp wow" data-wow-delay="1s">
+              <div class="projects__item-box">
+                <img src="images/projects/3.png" alt="project">
+                <a class="projects__item-name" href="#">Lancome L’Absolu Rouge Ruby Cream Holiday Edition</a>
+                <p class="projects__item-text">Ультрапигментированная губная помада</p>
+              </div>
+            </div>
+            <div class="projects__item animate__animated animate__fadeInUp wow" data-wow-delay="0.3s">
+              <div class="projects__item-box">
+                <img src="images/projects/4.png" alt="project">
+                <a class="projects__item-name" href="#">Makeup Obsession Be In Love With Eyeshadow Palette</a>
+                <p class="projects__item-text">Палетка теней для век</p>
+              </div>
+            </div>
+            <div class="projects__item animate__animated animate__fadeInUp wow" data-wow-delay="0.3s">
+              <div class="projects__item-box">
+                <img src="images/projects/1.jpg" alt="project">
+                <a class="projects__item-name" href="#">Lancome La Vie Est Belle Eau de Parfum</a>
+                <p class="projects__item-text">Омолаживающая сверхувлажняющая маска для лица</p>
+              </div>
+            </div>
+            <div class="projects__item animate__animated animate__fadeInUp wow" data-wow-delay="0.3s">
+              <div class="projects__item-box">
+                <img src="images/projects/2.png" alt="project">
+                <a class="projects__item-name" href="#">Guerlain Aqua Allegoria Discovery 
+                  Set</a>
+                <p class="projects__item-text">Парфюмерный набор</p>
+              </div>
+            </div>
+            <div class="projects__item animate__animated animate__fadeInUp wow" data-wow-delay="0.3s">
+              <div class="projects__item-box">
+                <img src="images/projects/3.png" alt="project">
+                <a class="projects__item-name" href="#">Lancome L’Absolu Rouge Ruby Cream Holiday Edition</a>
+                <p class="projects__item-text">Ультрапигментированная губная помада</p>
+              </div>
+            </div>
+            <div class="projects__item animate__animated animate__fadeInUp wow" data-wow-delay="0.3s">
+              <div class="projects__item-box">
+                <img src="images/projects/4.png" alt="project">
+                <a class="projects__item-name" href="#">Makeup Obsession Be In Love With Eyeshadow Palette</a>
+                <p class="projects__item-text">Палетка теней для век</p>
+              </div>
+            </div>
+          </div>
+
+      </div>
+    </section>
+
+    <section class="numbers">
+      <div class="container">
+          <h2 class="numbers__title">Мы в цифрах</h2>
+          <div class="numbers__items">
+            <div class="numbers__item">
+              <p class="numbers__total">
+                15
+                <span>лет</span>
+              </p>
+              <p class="numbers__text">успешной работы</p>
+            </div>
+            <div class="numbers__item">
+              <p class="numbers__total">
+                300
+                <span>человек</span>
+              </p>
+              <p class="numbers__text">работает в компании</p>
+            </div>
+            <div class="numbers__item">
+              <p class="numbers__total">
+                876
+                <span>товаров</span>
+              </p>
+              <p class="numbers__text">продается ежедневно</p>
+            </div>
+            <div class="numbers__item">
+              <p class="numbers__total">
+                150
+                <span>новинок</span>
+              </p>
+              <p class="numbers__text">поступает ежедневно</p>
+            </div>
+          </div>  
+      </div>
+    </section>
+
+    <div class="contact">
+      <div class="container">
+          <div class="contact__body section-body">
+            <div class="contact__text">
+              <h2 class="contact__title">Связаться с менеджером</h2>
+              <p class="contact__par">Менеджер проконсультирует по всем вопросам и подготовит коммерческое предложение</p>
+              <button class="contact__btn btn">Связаться с менеджером</button>
+            </div>
+            <div class="contact__manager">
+              <img src="images/manager.png" alt="manager">
+              <div class="contact__manager-text">
+                <p class="contact__manager-name">Наталья Сафронова</p>
+                <p class="contact__manager-pos">Менеджер интернет-магазина</p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
   </main>
 
   <footer class="footer">
     <div class="container">
-      
+        <div class="footer__top">
+          <div class="footer__col">
+            <a class="footer__logo" href="#">PerfectShop</a>
+            <a class="footer__phone" href="tel:+74995500050">+7 (499) 550-00-50</a>
+            <p class="footer__free">Звонок по России бесплатный</p>
+            <p class="footer__address">г.Москва, улица 1905 года, 267/2 </p>
+            <a class="footer__email" href="mailto:contact@perfectshop.com">contact@perfectshop.com</a>
+            <div class="footer__socails">
+              <a href="#">
+                <img src="images/socials/vk.svg" alt="vk logo">
+              </a>
+              <a href="#">
+                <img src="images/socials/fb.svg" alt="fb logo">
+              </a>
+              <a href="#">
+                <img src="images/socials/inst.svg" alt="inst logo">
+              </a>
+  
+            </div>
+          </div>
+          <div class="footer__col list-col">
+            <p class="list-col__title">Каталог косметики</p>
+            <ul class="list-col__list">
+              <li class="list-col__item">
+                <a class="list-col__link" href="#">Акции</a>
+              </li>
+              <li class="list-col__item">
+                <a class="list-col__link" href="#">Программа лояльности</a>
+              </li>
+              <li class="list-col__item">
+                <a class="list-col__link" href="#">Доставка и оплата</a>
+              </li>
+              <li class="list-col__item">
+                <a class="list-col__link" href="#">Гарантии</a>
+              </li>
+              <li class="list-col__item">
+                <a class="list-col__link" href="#">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col footer__col--list">
+            <p class="list-col__title">Клиентам</p>
+            <ul class="list-col__list">
+              <li class="list-col__item">
+                <a class="list-col__link" href="#">Юридическим лицам</a>
+              </li>
+              <li class="list-col__item">
+                <a class="list-col__link" href="#">Частным клиентам</a>
+              </li>
+              <li class="list-col__item">
+                <a class="list-col__link" href="#">Косметологам</a>
+              </li>
+              <li class="list-col__item">
+                <a class="list-col__link" href="#">Гарантии</a>
+              </li>
+              <li class="list-col__item">
+                <a class="list-col__link" href="#">Партнерская программа</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__col footer__col--list">
+            <p class="list-col__title">Компания</p>
+            <ul class="list-col__list">
+              <li class="list-col__item">
+                <a class="list-col__link" href="#">Новости</a>
+              </li>
+              <li class="list-col__item">
+                <a class="list-col__link" href="#">Наша команда</a>
+              </li>
+              <li class="list-col__item">
+                <a class="list-col__link" href="#">Партнеры</a>
+              </li>
+              <li class="list-col__item">
+                <a class="list-col__link" href="#">Отзывы и благодарности</a>
+              </li>
+              <li class="list-col__item">
+                <a class="list-col__link" href="#">Статьи и события</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <p class="footer__bottom-text">Все права защищены ©  2020</p>
+          <p class="footer__bottom-text">Политика конфиденциальности</p>
+          <p class="footer__bottom-text">Сделано в веб-студии</p>
+        </div>
     </div>
   </footer>
-  
-  </div>
+
+</div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/libs.min.js"></script>

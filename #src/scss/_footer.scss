@@ -1,0 +1,121 @@
+.footer {
+
+  // .footer__top
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 90px;
+    padding-bottom: 80px;
+  }
+
+  // .footer__col
+
+  &__col {
+    padding: 0 10px;
+  }
+
+  // .footer__logo
+
+  &__logo {
+    font-size: 22px;
+    line-height: 26px;
+    color: $accent;
+    margin-bottom: 16px;
+  }
+
+  // .footer__phone
+
+  &__phone {
+    display: block;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 22px;
+    margin-bottom: 8px;
+  }
+
+  // .footer__free
+
+  &__free {
+    font-size: 12px;
+    line-height: 140%;
+    color: #BDBDBD;
+    margin-bottom: 24px;
+  }
+
+  // .footer__address
+
+  &__address {
+    margin-bottom: 4px;
+  }
+
+  // .footer__email
+
+  &__email {
+    margin-bottom: 16px;
+  }
+
+  // .footer__socails
+
+  &__socails {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 125px;
+  }
+
+  // .footer__col--list
+
+  &__col--list {
+  }
+
+  // .footer__bottom
+
+  &__bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: 12px;
+
+    background-color: $accent;
+    color: #fff;
+    margin-left: -35px;
+    margin-right: -115px;
+    padding: 15px 115px 18px 35px;
+  }
+
+  // .footer__bottom-text
+
+  &__bottom-text {
+  }
+}
+
+.list-col {
+
+  // .list-col__title
+
+  &__title {
+    font-weight: 400;
+    margin-bottom: 24px;
+  }
+
+  // .list-col__list
+
+  &__list {
+  }
+
+  // .list-col__item
+
+  &__item {
+  }
+
+  &__item + &__item {
+    margin-top: 10px;
+  }
+
+  // .list-col__link
+
+  &__link {
+  }
+}

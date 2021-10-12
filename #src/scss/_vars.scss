@@ -1,2 +1,16 @@
 $accent: #AA8453;
 $grey: #c4c4c4;
+
+%title {
+  font-family: 'Cormorant', serif;
+  font-weight: 500;
+  font-size: 45px;
+  line-height: 110%;
+
+  @media (max-width:992px) {
+    font-size: 28px;
+  }
+  @media (max-width:400px) {
+    font-size: 23px;
+  }
+}
