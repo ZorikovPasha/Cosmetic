@@ -1,5 +1,4 @@
 .header {
-
   position: absolute;
   z-index: 10;
   top: 0;
@@ -13,6 +12,7 @@
   &__inner {
     display: flex;
     align-items: center;
+    padding: 15px 0;
   }
 
   // .header__phone
@@ -24,41 +24,6 @@
 }
 
 
-
-.menu-btn {
-
-  position: absolute;
-  top: 50%;
-  left: 1px;
-  display: none;
-  width: 60px;
-  height: 50px;
-  transform: translate(0%, -50%);
-  background-color: $accent;
-
-  & div {
-    width: 40px;
-    height: 3px;
-    background-color: #fff;
-    transition: all .5s;
-  }
-  div + div {
-    margin-top: 5px;
-  }
-}
-
-  .menu-btn.active {
-    div:nth-child(2) {
-      opacity: 0;
-    }
-    div:nth-child(1) {
-      transform: translateY(5px) rotate(135deg);
-    }
-    div:nth-child(3) {
-      transform: translateY(-9px) rotate(-135deg);
-    }
-}  
-
 .logo {
   font-weight: 300;
   font-size: 22px;
@@ -68,7 +33,6 @@
 }
 
 .menu {
-
   padding: 24px 0 26px 35px;
   margin-right: auto;
 
@@ -97,14 +61,8 @@
   &__item + &__item {
     margin-left: 12px;
   }
-
-  // .menu__link
-
-  &__link {
-  }
 }
 .user {
-
   display: flex;
   align-items: center;
   margin-right: 32px;
@@ -131,15 +89,5 @@
   &__num {
     font-size: 15px;
     line-height: 18px;
-  }
-
-  // .user__num--favorite
-
-  &__num--favorite {
-  }
-
-  // .user__num--cart
-
-  &__num--cart {
   }
 }

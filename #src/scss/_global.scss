@@ -68,6 +68,22 @@ a {
   color: inherit;
 }
 
+
+.projects__items,
+.popular__items {
+  .slick-track {
+    display: flex !important;
+  }
+
+  .slick-slide {
+    height: inherit !important;
+  }
+
+  .slick-slide > div {
+    height: 100%;
+  }
+}
+
 .font {
   font-family: 'Cormorant', serif;
   font-family: 'Fira Sans', sans-serif;
